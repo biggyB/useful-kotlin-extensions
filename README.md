@@ -10,7 +10,7 @@ Place this code in a helper file
       return intent
       }
 
-      inline fun Intent.with (body: Intent.() -> Unit) { body() }
+      inline fun Intent.add (body: Intent.() -> Unit) { body() }
 
       fun Intent.start(context: Context){
       context.startActivity(this)
@@ -18,7 +18,7 @@ Place this code in a helper file
 
 and then you can do something like this
 
-     context.goto(MyClass::class.java).with {
+     context.goto(MyClass::class.java).add {
           addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
           putExtra("ruleId", ruleId)
           putExtra("type", "Example")
