@@ -61,3 +61,19 @@ Then all you need to do to put something into shared Preferences is:
        // With a string var
        var myString = "My string"
        myString.toPrefs(R.string.key, context)
+
+## toast Function
+A simple way to show toasts in Kotlin
+
+      fun String.toast(context: Context)= Toast.makeText(context, this, Toast.LENGTH_SHORT).show()
+      fun String.toastLong(context: Context) = Toast.makeText(context, this, Toast.LENGTH_LONG).show()
+      
+Then to show a toast 
+
+      "This is my toast".toast(context)
+      
+      val myString = "This is my toast"
+      myString.toast(context)
+      
+      // or to show a long toast
+      myString.toastLong(context)
