@@ -77,3 +77,31 @@ Then to show a toast
       
       // or to show a long toast
       myString.toastLong(context)
+      
+## forWith
+This is a kotlin for loop with a with function
+
+     inline fun <T> forWith(items: Iterable<T>, body: T.() -> Unit){
+         for(item in items){
+         item.body()
+         }
+     }
+
+With this function you can do something like this:
+
+      for (people) {
+          hairColor = "yellow"
+          height = 5.12
+          weight = 140
+          age = 5
+      }
+      
+instead of this
+
+         for (person in people){
+             person.hairColor = "yellow"
+             person.height = 5.12
+             person.weight = 140
+             person.age = 5       
+         }
+      
