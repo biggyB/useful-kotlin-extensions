@@ -90,7 +90,7 @@ This is a kotlin for loop with a with function
 With this function you can do something like this:
 
       for (people) {
-          hairColor = "yellow"
+          hairColor = "blond"
           height = 5.12
           weight = 140
           age = 5
@@ -98,10 +98,10 @@ With this function you can do something like this:
       
 instead of this
 
-         for (person in people){
-             person.hairColor = "yellow"
-             person.height = 5.12
-             person.weight = 140
-             person.age = 5       
-         }
+      for (person in people){
+          person.hairColor = "blond"
+          person.height = 5.12
+          person.weight = 140
+          person.age = 5       
+      }
       
