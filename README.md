@@ -89,7 +89,7 @@ This is a kotlin for loop with a with function
 
 With this function you can do something like this:
 
-      for (people) {
+      forWith (people) {
           hairColor = "blond"
           height = 5.12
           weight = 140
